@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+/* إخفاء شارة نتلايفاي والـ iframe الخاص بها نهائياً وبشكل جذري */
+#nl-badge-frame,
+iframe#nl-badge-frame {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
